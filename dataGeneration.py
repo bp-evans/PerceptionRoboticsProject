@@ -18,7 +18,7 @@ instances = []
 sequence = []
 classes = MetadataCatalog.get(cfg.DATASETS.TRAIN[0]).thing_classes
 
-def bboxex_convert(results):
+def bboxes_convert(results):
     bboxes = results.pred_boxes if results.has('pred_boxes') else None
     bboxes = Visualizer._convert_boxes(Visualizer.__init__,bboxes.to('cpu'))
     return bboxes
@@ -39,5 +39,41 @@ def convertDetectionsSORT():
 
     with open("data/%s/det/det.txt"%(sequence), 'w') as outfile:
         for data in range(len(instances)):
+            bboxes = bboxes_convert(instances[data])
+            scores = scores_convert(instances[data])
+            classes = classes_convert(instances[data])
+
+            bboxes_filter = bboxes.tolist()
+            scores_filter = scores.tolist()
+            classes_filter = classes.tolist()
+            pos = 0
+
+            while pos < len(classes_filter):
+              if classes_filter[pos] != 0:
+                    classes_filter.pop(pos)
+                    bboxes_filter.pop(pos)
+                    scores_filter.pop(pos)
+            else:
+                pos += 1
+
+            det_num = len(bboxes_filter)
+
+            for i in range(det_num):
+                frameNum = data + 1
+                cords = bboxes_filter(i)
+                left = cords[0]
+                top = cords[1]
+                width = cords[2]-left
+                height = cords[3]-top
+                frameScore = scores_filter[i]
+            print('%d,-1,%.3f,%.3f,%.3f,%.3f,%.6f,-1,-1,-1'%(frameNum, left, 
+                                                           top, width, 
+                                                           height, 
+                                                           frameScore), file=outfile)
+            tmp = [frameNum, -1, left, top, width, height, frameScore, -1, -1, -1]
+            dets.append(tmp)
+
+        dets = np.array(dets)
+        #np.save("data/%s/det_deep")
 
 
