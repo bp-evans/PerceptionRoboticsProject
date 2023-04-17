@@ -1,0 +1,95 @@
+galen@Wierden:/media/galen/School/CSE598 Perception in Robotics/Project/PerceptionRoboticsProject$ ls
+ 2DConvolutionFilterSort.py   CrimminsSmoothingSort.py   Filter_Outputs_w_Baseline   GaussianFilterSort.py   MedianFilterSort.py   MOT15.zip      'README 2.md'   READMEsort.md      SmoothingSort.py
+ AverageMeanFilterSort.py     data                       FrequencyFilterSort.py      LICENSE                 MOT15                 mot_benchmark   README.md      requirements.txt   sort.py
+galen@Wierden:/media/galen/School/CSE598 Perception in Robotics/Project/PerceptionRoboticsProject$ python3 sort.py 
+Processing ADL-Rundle-6.
+Processing ADL-Rundle-8.
+Processing ETH-Bahnhof.
+Processing ETH-Pedcross2.
+Processing ETH-Sunnyday.
+Processing KITTI-13.
+Processing KITTI-17.
+Processing PETS09-S2L1.
+Processing TUD-Campus.
+Processing TUD-Stadtmitte.
+Processing Venice-2.
+Total Tracking took: 6.138 seconds for 5500 frames or 896.0 FPS
+galen@Wierden:/media/galen/School/CSE598 Perception in Robotics/Project/PerceptionRoboticsProject$ python3 2DConvolutionFilterSort.py 
+Processing ADL-Rundle-6.
+Processing ADL-Rundle-8.
+Processing ETH-Bahnhof.
+Processing ETH-Pedcross2.
+Processing ETH-Sunnyday.
+Processing KITTI-13.
+Processing KITTI-17.
+Processing PETS09-S2L1.
+Processing TUD-Campus.
+Processing TUD-Stadtmitte.
+Processing Venice-2.
+Total Tracking took: 6.178 seconds for 5500 frames or 890.3 FPS
+galen@Wierden:/media/galen/School/CSE598 Perception in Robotics/Project/PerceptionRoboticsProject$ python3 CrimminsSmoothingSort.py 
+Processing ADL-Rundle-6.
+Processing ADL-Rundle-8.
+Processing ETH-Bahnhof.
+Processing ETH-Pedcross2.
+Processing ETH-Sunnyday.
+Processing KITTI-13.
+Processing KITTI-17.
+Processing PETS09-S2L1.
+Processing TUD-Campus.
+Processing TUD-Stadtmitte.
+Processing Venice-2.
+Total Tracking took: 6.148 seconds for 5500 frames or 894.5 FPS
+galen@Wierden:/media/galen/School/CSE598 Perception in Robotics/Project/PerceptionRoboticsProject$ python3 GaussianFilterSort.py 
+Processing ADL-Rundle-6.
+Processing ADL-Rundle-8.
+Processing ETH-Bahnhof.
+Processing ETH-Pedcross2.
+Processing ETH-Sunnyday.
+Processing KITTI-13.
+Processing KITTI-17.
+Processing PETS09-S2L1.
+Processing TUD-Campus.
+Processing TUD-Stadtmitte.
+Processing Venice-2.
+Total Tracking took: 6.181 seconds for 5500 frames or 889.8 FPS
+galen@Wierden:/media/galen/School/CSE598 Perception in Robotics/Project/PerceptionRoboticsProject$ python3 MedianFilterSort.py 
+Processing ADL-Rundle-6.
+Processing ADL-Rundle-8.
+Processing ETH-Bahnhof.
+Processing ETH-Pedcross2.
+Processing ETH-Sunnyday.
+Processing KITTI-13.
+Processing KITTI-17.
+Processing PETS09-S2L1.
+Processing TUD-Campus.
+Processing TUD-Stadtmitte.
+Processing Venice-2.
+Total Tracking took: 6.170 seconds for 5500 frames or 891.4 FPS
+galen@Wierden:/media/galen/School/CSE598 Perception in Robotics/Project/PerceptionRoboticsProject$ python3 AverageMeanFilterSort.py 
+Processing ADL-Rundle-6.
+Processing ADL-Rundle-8.
+Processing ETH-Bahnhof.
+Processing ETH-Pedcross2.
+Processing ETH-Sunnyday.
+Processing KITTI-13.
+Processing KITTI-17.
+Processing PETS09-S2L1.
+Processing TUD-Campus.
+Processing TUD-Stadtmitte.
+Processing Venice-2.
+Total Tracking took: 6.158 seconds for 5500 frames or 893.1 FPS
+galen@Wierden:/media/galen/School/CSE598 Perception in Robotics/Project/PerceptionRoboticsProject$ python3 FrequencyFilterSort.py 
+Processing ADL-Rundle-6.
+Processing ADL-Rundle-8.
+Processing ETH-Bahnhof.
+Processing ETH-Pedcross2.
+Processing ETH-Sunnyday.
+Processing KITTI-13.
+Processing KITTI-17.
+Processing PETS09-S2L1.
+Processing TUD-Campus.
+Processing TUD-Stadtmitte.
+Processing Venice-2.
+Total Tracking took: 6.170 seconds for 5500 frames or 891.4 FPS
+
